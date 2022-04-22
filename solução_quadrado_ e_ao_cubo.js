@@ -1,19 +1,9 @@
-using System;
+let N = parseInt(gets());
+let X, Y;
 
-class Desafios {
-{
-    public static void Main() {
-        var numero = Int32.Parse(Console.ReadLine());
-        
-        if(numero != null)
-        {
-          for(int i = 1; i <= numero; i++)
-          {
-           var numeros = $"{i} {Math.Pow(i,2)} {Math.Pow(i,3)}";
-           Console.WriteLine(numeros);
-          }
-        } else {
-          Console.WriteLine("Insira um novo número entre 1 e 1000:");
-        }
-    }
+for (let i = 1; i <= N; i++) {
+    X = i * i
+    Y = i * i * i
+    
+    console.log(i, X, Y)
 }
